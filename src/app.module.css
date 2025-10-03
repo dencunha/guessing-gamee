@@ -6,3 +6,25 @@
   justify-content: center;
   align-items: center;
 }
+
+.container main {
+  background-color: #ffffff;
+  width: 34.75rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  padding-top: 4.5rem;
+  border-radius: .75rem;
+
+}
+
+.word {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin: 2.5rem 0;
+}
