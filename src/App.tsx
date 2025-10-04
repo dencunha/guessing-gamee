@@ -23,7 +23,11 @@ export default function App() {
 
 
   function handleRestartGame(){
-    alert("Reiniciar o jogo")
+    const isConfirmed = window.confirm("Você tem certeza que deseja reiniciar?")
+
+    if(isConfirmed) {
+      startGame()
+    }
   }
 
   function startGame() {
@@ -110,7 +114,8 @@ export default function App() {
       <Header 
         current={lettersUsed.length} 
         max={challenge.word.length + attempt_margin} 
-        onRestar={handleRestartGame} />
+        onRestar={handleRestartGame} 
+      />
 
       <Tip tip={challenge.tip}/>
 
