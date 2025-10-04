@@ -6,7 +6,7 @@ type Props = {
   color?: "default" | "correct" | "wrong"
 }
 
-export function Letter({value = "", size = "default", color = "default"} ){
+export function Letter({value = "", size = "default", color = "default"}: Props ){
   return (
     <div 
       className={`
